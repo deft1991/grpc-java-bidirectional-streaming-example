@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.projectx.interop;
+
+option csharp_namespace = "ProjectX.Interop";
+
+service BattleService {
+  rpc Echo(stream PlainData) returns (stream PlainData) { }
+}
+
+message PlainData {
+  bytes data = 1;
+}

@@ -1,0 +1,5 @@
+grpc:
+  port: 50000
+logging:
+  level:
+    ROOT: WARN
